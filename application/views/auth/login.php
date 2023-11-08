@@ -12,16 +12,14 @@
                                         <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
                                     </div>
                                     <?php echo $this->session->flashdata('pesan'); ?>
-                                    <form method="post" class="user" action="<?php echo base_url('auth/login') ?>">
+                                    <form method="post" class="user" action="<?= base_url('auth/login'); ?>">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
-                                                name="username" placeholder="Enter Username Address...">
-                                                <?php echo form_error('username', '<div class="text-danger small ml-2">','</div>'); ?>
+                                            <input type="text" class="form-control form-control-user" name="username" placeholder="Enter Username Address...">
+                                            <?php echo form_error('username', '<div class="text-danger small ml-2">', '</div>'); ?>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                name="password" placeholder="Password">
-                                                <?php echo form_error('password', '<div class="text-danger small ml-2">','</div>'); ?>
+                                            <input type="password" class="form-control form-control-user" name="password" placeholder="Password">
+                                            <?php echo form_error('password', '<div class="text-danger small ml-2">', '</div>'); ?>
                                         </div>
                                         <button type="submit" class="btn btn-secondary btn-user btn-block">
                                             Login
@@ -30,10 +28,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" href="#">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
